@@ -1,0 +1,112 @@
+body{
+    background-image: url(https://dailygeekshow.com/wp-content/uploads/2019/02/une-vide-spatial.jpg) ;
+    
+}
+
+#ISS {
+    position: relative;z-index: 4;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    animation: up-down 1s linear alternate infinite;
+  
+}
+
+
+#signe-section{
+    position: relative;z-index: 2;
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 50px;
+
+}
+#signe-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+
+}
+
+
+#signe-image{
+    height: 200px;
+    margin: auto;
+    margin: 20px;
+
+}
+
+#description{
+    position: relative;z-index: 3;
+    background-color: black;
+    color: whitesmoke;
+    height: 350px;
+}
+
+
+section{
+    margin: 0px;
+    padding: 20px;
+}
+
+#signe-button{
+  padding: 15px;
+  color: whitesmoke;
+  background-color: #1A5C7E;
+}
+
+
+.earth {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 200px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 20px #000 inset, 0 0 20px 2px #000;
+  }
+  
+  .earth:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: -20px -20px 50px 2px #000 inset;
+    border-radius: 50%;
+  }
+  
+  .earth > div {
+    width: 200%;
+    height: 100%;
+    animation: spin 80s linear alternate infinite;
+    background: url(https://echofoundation.org/wp-content/uploads/2017/07/world-map.jpg);
+    background-size: cover;
+  }
+
+  @keyframes spin {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes up-down {
+    to {
+      transform: translateY(-1%);
+    }
+  }
+  
+@media (max-width: 768px){
+
+  .earth {
+    width: 700px;
+    height: 700px;
+  }
+   
+
+}
